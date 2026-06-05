@@ -1,5 +1,11 @@
 package cl.example.dronechile_orquestador.dto;
 
-public record DronDTO() {
+import java.time.LocalDate;
 
-}
+public record DronDTO(
+    int idDrone,
+    String numeroRegistro,
+    double peso,
+    int idTipo,
+    LocalDate fechaVencimientoSeguro
+) {}

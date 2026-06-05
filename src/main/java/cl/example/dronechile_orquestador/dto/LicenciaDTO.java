@@ -1,5 +1,9 @@
 package cl.example.dronechile_orquestador.dto;
 
-public record LicenciaDTO() {
+import java.time.LocalDate;
 
-}
+public record LicenciaDTO(
+    int idLicencia,
+    int rutPiloto,
+    LocalDate fechaVen
+) {}
